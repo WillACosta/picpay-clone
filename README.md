@@ -1,5 +1,7 @@
 ## PicPay Clone
 
+<img src='https://i.imgur.com/uuGl9Qj.jpg'/>
+
 Clone da interface do aplicativo de pagamentos PicPay, utilizando React-Native e Expo
 
 ### Construído com 
