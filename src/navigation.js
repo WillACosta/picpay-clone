@@ -1,7 +1,12 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { AntDesign, Ionicons } from "@expo/vector-icons";
+import {
+  AntDesign,
+  Ionicons,
+  Entypo,
+  SimpleLineIcons,
+} from "@expo/vector-icons";
 
 import HomeScreen from "./pages/home";
 import WalletScreen from "./pages/wallet";
@@ -20,23 +25,23 @@ const icons = {
     name: "home",
   },
   Wallet: {
-    lib: AntDesign,
-    name: "creditcard",
+    lib: Entypo,
+    name: "wallet",
   },
   Notifications: {
     lib: Ionicons,
     name: "ios-notifications-outline",
   },
   Settings: {
-    lib: AntDesign,
-    name: "setting",
+    lib: SimpleLineIcons,
+    name: "bag",
   },
 };
 
 export default function Navigation() {
   return (
     <Tab.Navigator
-      initialRouteName="Wallet"
+      initialRouteName="Home"
       screenOptions={({ route, navigation }) => ({
         tabBarIcon: ({ color, size, focused }) => {
           if (route.name == "Pay")
@@ -78,7 +83,7 @@ export default function Navigation() {
       <Tab.Screen
         name="Settings"
         component={PayScreen}
-        options={{ title: "Ajustes" }}
+        options={{ title: "Loja" }}
       />
     </Tab.Navigator>
   );

@@ -2,8 +2,9 @@
 
 Clone da interface do aplicativo de pagamentos PicPay, utilizando React-Native e Expo
 
-### Recursos utilizados
+### Construído com 
 
+- React Native
 - Expo
 
 ### Anotações

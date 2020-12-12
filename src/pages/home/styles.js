@@ -8,14 +8,16 @@ export const Wrapper = styled.SafeAreaView`
 export const Container = styled.ScrollView``; // Criar scroll para a página
 
 export const Header = styled.View`
-  height: 50px;
+  height: 80px;
   padding: 0 16px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 `;
 
-export const BalanceContainer = styled.View``;
+export const BalanceContainer = styled.View`
+  padding: 14px;
+`;
 
 export const BalanceTitle = styled.Text`
   color: rgba(255, 255, 255, 0.8);
@@ -26,6 +28,6 @@ export const BalanceTitle = styled.Text`
 export const Balance = styled.Text`
   color: #fff;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
 `;
